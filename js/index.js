@@ -33,7 +33,6 @@ import("../pkg/index.js")
       }
 
       if (!board.has_puttable(turn)) {
-        skipStroke += 1;
         gameMsg = `${Color[turn]} pass!`;
         renderBoard();
         setTimeout(() => nextTurn(), 500);
